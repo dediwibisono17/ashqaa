@@ -1,0 +1,53 @@
+<!-- navbar menu -->
+	<nav class="header-top red darken-3 menu-top">
+	    <div class="nav-wrapper navbar-fixed">
+	        <div class="container">
+	        	<a href="../ashqaa" class="brand-logo" id="logo">
+	        		<img src="assets/img/logo-top1.PNG" alt="Ashqaa">
+	        		<img src="assets/img/ashqaa-logo.png" alt="">
+	        	</a>
+	        	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	        	<ul class="right hide-on-med-and-down">
+	        	    <li><a class="merchant" href="https://drive.google.com/drive/u/0/my-drive">Pesan</a>
+	        	    </li>
+	        	    <li><a class="merchant" href="produk.html">Produk</a>
+	        	    </li>
+	        	    <li><a class="merchant" href="cara-belanja.html">Cara Belanja</a>
+	        	    </li>
+	        	</ul>
+	        	<ul class="side-nav" id="mobile-demo">
+	        	    <li class="img-logo"><img src="assets/img/logo-top1.PNG" alt=""></li>
+	        	    <li><a href="https://drive.google.com/drive/u/0/my-drive">Pesan</a>
+	        	    </li>
+	        	    <li><a href="produk.html">Produk</a>
+	        	    </li>
+	        	    <li class="last"><a href="cara-belanja.html">Cara Belanja</a>
+	        	    </li>
+	        		<li><span>&copy; 2018 Copyright Ashqaa</span></li>
+	        	</ul>
+	        </div>
+	    </div>
+	</nav>
+	<!-- navbar menu end -->
+	<script>
+	/*navbar*/
+	    $('.button-collapse').sideNav({
+	          menuWidth: 250,
+	          edge: 'left',
+	          closeOnClick: true,
+	          draggable: true
+	        }
+	    );
+
+	    $(".img-logo").click(function(){
+	        window.location.href= '../'
+	    });
+
+	    $(window).scroll(function() {
+		  if ($(document).scrollTop() > 50) {
+		    $('nav').removeClass("menu-top").addClass('menu-top-small');
+		  } else {
+		    $('nav').removeClass('menu-top-small').addClass('menu-top');
+		  }
+		});		
+	</script>

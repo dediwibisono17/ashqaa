@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="assets/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<title>Ashqaa - Pembayaran</title>
+</head>
+<body>
+	<div id="header"></div>
+    <div class="container">
+    <section class="breadcumbs">
+    	<div class="nav-wrapper">
+			<div class="col s12">
+	    		<a href="../ashqaa" class="breadcrumb">Home</a>
+	    		<a href="../ashqaa/produk.html" class="breadcrumb">Produk</a>
+	    		<a href="../ashqaa/produk-detail.html" class="breadcrumb">Produk detail</a>
+	    		<a href="../ashqaa/pembayaran.html" class="breadcrumb">Pembayaran</a>
+    	  	</div>
+    	</div>
+    </section>
+	<section class="pembayaran">
+		<h3 class="title center-align">Pembayaran</h3>
+		<div class="row">
+	    <form class="col s12 m8 offset-m2">
+	    	<div class="notif">
+		    	<i class="material-icons">notifications_active</i>
+		    	<div class="text-notif">Silahkan isi data diri untuk menyelesaikan pesanan Anda</div>
+	    	</div>
+	    	<!-- <h3 class="subtitle">Pesanan Anda</h3>
+	    	<div class="col s12 produk-summary" style="border:1px solid green;padding: 10px;margin: 16px 0 24px">
+	    		<div class="image" style="width: 100px;height: 100px;float: left;margin-right: 10px;">
+	    			<img src="assets/img/c1.PNG" alt="" style="width: 100%">
+	    		</div>
+	    		<div class="nama">
+	    			Dress Kimmi Balqis by Ashqaa
+	    			<div class="harga">Rp 120.000</div>
+	    		</div>
+	    	</div> -->
+	    	<h3 class="subtitle">Data Diri</h3>
+	        <div class="input-field col s12">
+	          	<input id="first_name" type="text" class="validate">
+	          	<label for="first_name">Nama Lengkap</label>
+	        </div>
+	      	<div class="input-field col s12">
+	          	<input id="no_handphone" type="number" class="validate" data-length="12">
+	          	<label for="no_handphone">No Handphone</label>
+	      	</div>
+	        <div class="input-field col s12">
+		    	<input id="alamat" type="text" class="validate">
+		        <label for="alamat">Alamat</label>
+		    </div>
+		    <div class="input-field col s12">
+		    	<input id="size" type="text" class="validate">
+		        <label for="size">Size</label>
+		    </div>
+		    <div class="input-field col s12">
+		    	<input id="warna" type="text" class="validate">
+		        <label for="warna">Warna</label>
+		    </div>
+		    <div class="input-field col s12 m6">
+		    	<select class="icons">
+		    		<option value="" disabled selected>Pilih Rekening</option>
+		      		<option value="" data-icon="assets/img/payment/icon-mandiri.png" class="right">900 00 2020 9392 - Ashqaa</option>
+		      		<option value="" data-icon="assets/img/payment/icon-bri.png" class="right">123999030 - Ashqaa</option>
+		      		<option value="" data-icon="assets/img/payment/icon-bca.png" class="right">773377374 - Ashqaa</option>
+		      		<option value="" data-icon="assets/img/payment/icon-bni.png" class="right">53534421 - Ashqaa</option>
+		    	</select>
+		    	<label>Transfer</label>
+		    </div>
+	      	<div class="input-field col s12 m6">
+		    	<select class="icons">
+		      		<option value="" data-icon="assets/img/logo/jne_icon.gif" class="right">JNE</option>
+		      		<option value="" data-icon="assets/img/logo/jnt_icon.jpg" class="right">J&amp;T</option>
+		      		<option value="" data-icon="assets/img/logo/gosend_icon.png" class="right">Go-Send</option>
+		    	</select>
+		    	<label>Pengiriman</label>
+		  	</div>
+	  		<!-- button -->
+		    <div class="button-primary">
+			   	<button class="btn waves-effect waves-light red darken-2" type="submit" name="action">Bayar</button>
+			</div>
+	    </form>
+	  </div>
+	</section>
+	</div>
+	<div id="footer"></div>
+	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/materialize.js"></script>
+	<script>
+	function submit(){window.location.href="premiumidlineat.html"}$(function(){$("#header").load("header.html"),$("#footer").load("footer.html")});
+	$('select').material_select();
+	</script>	
+</body>
+</html>
